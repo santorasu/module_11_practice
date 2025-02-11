@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import 'Widget/AnimeWidget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -133,81 +135,13 @@ class HomePage extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      Container(
-                        height: 30.h,
-                        width: 50.w,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.network("https://cdn.class101.net/images/9ec391ea-ceeb-4d46-93c6-9b36163430cb"),
-                            Text("Anime Girls"),
-                            SizedBox(height: 1.h,),
-                            Text("ami tmr moner vitor ekbar ghure aste chai.. ")
-                          ],
-                        ),
-                      ),
+                      AnimeWidget(AnimeName: 'Siha', AnimeImage: 'https://ih1.redbubble.net/image.5265509779.4599/flat,750x,075,f-pad,750x1000,f8f8f8.jpg', AnimeDescription: 'This is Siha',),
                       SizedBox(width: 5.w,),
-                      Container(
-                        height: 30.h,
-                        width: 50.w,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.network("https://cdn.class101.net/images/9ec391ea-ceeb-4d46-93c6-9b36163430cb"),
-                            Text("Anime Girls"),
-                            SizedBox(height: 1.h,),
-                            Text("ami tmr moner vitor ekbar ghure aste chai.. ")
-                          ],
-                        ),
-                      ),
+                      AnimeWidget(AnimeName: 'Anime', AnimeImage: 'https://fydn.imgix.net/m%2Fgen%2Fart-print-std-portrait-p1%2F9e930f5e-32e4-412c-a0b4-91458515d9eb.jpg?auto=format%2Ccompress&q=75', AnimeDescription: 'Hello Anime',),
                       SizedBox(width: 5.w,),
-                      Container(
-                        height: 30.h,
-                        width: 50.w,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.network("https://cdn.class101.net/images/9ec391ea-ceeb-4d46-93c6-9b36163430cb"),
-                            Text("Anime Girls"),
-                            SizedBox(height: 1.h,),
-                            Text("ami tmr moner vitor ekbar ghure aste chai.. ")
-                          ],
-                        ),
-                      ),
+                      AnimeWidget(AnimeName: 'Anime Girls', AnimeImage: 'https://fydn.imgix.net/m%2Fgen%2Fcanvas-std-portrait-p1%2F2f3442a9-89ef-41d1-b13d-cb10a59f071a.jpg?auto=format%2Ccompress&q=75', AnimeDescription: 'Anime Girl With Long Hair 1',),
                       SizedBox(width: 5.w,),
-                      Container(
-                        height: 30.h,
-                        width: 50.w,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.network("https://cdn.class101.net/images/9ec391ea-ceeb-4d46-93c6-9b36163430cb"),
-                            Text("Anime Girls"),
-                            SizedBox(height: 1.h,),
-                            Text("ami tmr moner vitor ekbar ghure aste chai.. ")
-                          ],
-                        ),
-                      ),
+                      AnimeWidget(AnimeName: 'Anime Girls', AnimeImage: 'https://images-ng.pixai.art/images/orig/ab8bb4a6-a699-4f04-a2ec-fb52d612109f', AnimeDescription: 'Beautiful cute cheap anime girl',),
                     ],
                   ),
                 )
@@ -217,3 +151,4 @@ class HomePage extends StatelessWidget {
         ));
   }
 }
+

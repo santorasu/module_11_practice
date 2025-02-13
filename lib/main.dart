@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 import 'Widget/AnimeWidget.dart';
+import 'Widget/calculatorApp.dart';
+import 'Widget/waterTracker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
                       TextStyle(fontWeight: FontWeight.bold, fontSize: 25))),
           debugShowCheckedModeBanner: false,
           title: "Module 11 Practice",
-          home: HomePage(),
+          home: watarTracker(),
         );
       }
     );

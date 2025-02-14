@@ -11,3 +11,5 @@ This project demonstrates the implementation of **Bottom Sheet**, **Alert Dialog
 - **Bottom Sheet**: Displays modal and persistent bottom sheets.
 - **Alert Dialog**: Shows customizable alert dialogs for user interactions.
 - **Box Decoration**: Applies decoration to widgets, including borders, colors, gradients, and shadows.
+- **Calculator App**: Create a calculator app.
+- **Water Tracker App**: Create a Water Tracker app with dinamic value.
